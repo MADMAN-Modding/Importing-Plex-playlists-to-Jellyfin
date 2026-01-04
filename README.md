@@ -1,6 +1,6 @@
 # How to import playlists from Plex to Jellyfin, no matter the user type
 
-<p>I'll preface this my saving that access to the Plex and Jellyfin servers' filesystems is required</p>
+<p>I'll preface this by saying that access to the Plex and Jellyfin servers' filesystems is required</p>
 
 <p>I will also preface this with that I am doing this on Linux, the only command that will really need is sqlite3, as that will be used for data extraction.</p>
 
@@ -56,7 +56,7 @@ Press the three vertically-stacked dots and press <b>Add to Playlist</b> then ei
 Finally delete the 3mu file from your media library and refresh Jellyfin to remove it from your server.
 
 <h2>The Second Solution</h2>
-I'm going to be straight forward, I use AI to write this script because I wasn't about to learn how to handle XML in Python because as you can see by my GitHub, I don't use Python, Rust and Java are what I use the most.
+I'm going to be straight forward, I used AI to write this script because I wasn't about to learn how to handle XML in Python because as you can see by my GitHub, I don't use Python, Rust and Java are what I use the most.
 
 Download the script called <b>3mu-to-xml.py</b>
 
@@ -76,7 +76,7 @@ Head to the following directory
 
     /var/lib/jellyfin/data/playlists
 
-This will contain nicely named folders based on the name of the playlist, simply replace the .xml file in that previously-created playlist with the one that was generated, ensuring that you are overwriting the file no making a file called something different and deleting the previous file.
+This will contain nicely named folders based on the name of the playlist, simply replace the .xml file in that previously-created playlist with the one that was generated, ensuring that you are overwriting the file not making a file called something different and deleting the previous file.
 
 Find the playlist on Jellyfin, it will not be updated
 
