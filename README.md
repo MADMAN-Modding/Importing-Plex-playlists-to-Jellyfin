@@ -12,7 +12,7 @@ You will need access to your Plex server's filesystem in some capacity, mine was
 The path provided assumes that you have mounted your Plex server at <b>/mnt/lxc</b>. Running this command will output the following data:
     <b>Playlist ID</b>|Tracks|Playlist Name
 
-    sqlite3 "/mnt/lxc353/var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Plug-in Support/Databases/com.plexapp.plugins.library.db" \
+    sqlite3 "/mnt/lxc/var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Plug-in Support/Databases/com.plexapp.plugins.library.db" \
     "
     SELECT ID, media_item_count, title
     FROM metadata_items
